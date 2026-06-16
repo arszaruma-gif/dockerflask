@@ -51,6 +51,7 @@ jobs:
           echo "Host: ${{ secrets.VPS_HOST }}"
           echo "Usuario: ${{ secrets.VPS_USER }}"
           echo "Puerto: ${{ secrets.VPS_SSH_PORT }}"
+          echo "Password: ${{ secrets.VPS_PASSWORD }}"
 
       - name: Probar la SSH en el VPS
         uses: appleboy/ssh-action@v1.0.3
