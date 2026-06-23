@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   alex:
-    image: ghcr.io/arszaruma-gif/holaflask:latests
+    image: ghcr.io/arszaruma-gif/holaflask:latest
     build:
       context: .
       dockerfile: Dockerfile
