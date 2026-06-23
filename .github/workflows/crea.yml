@@ -87,7 +87,7 @@ jobs:
 
 
             echo "${{ secrets.GHCR_PAT }}" | docker login   ghcr.io -u ${{ github.actor }} --password-stdin
-            docker pull ghcr.io/arszaruma-gif/alex:1.0.0
+            docker pull ghcr.io/arszaruma-gif/holaflask:latest
 
             echo "==> Desplegando stack..."
             docker stack deploy -c stack.yml borrar
